@@ -4,6 +4,7 @@
     @click="selectFun"
     v-document-click="documentClick"
   >
+  <!--   -->
     <div :class="['choose', disabled ? 'disabled' : '']">
       <span>{{ value }}</span>
       <i class="el-icon-caret-bottom"></i>

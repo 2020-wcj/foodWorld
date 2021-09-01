@@ -1,14 +1,13 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'https://open.duyiedu.com';
+axios.defaults.baseURL = 'https://open.duyiedu.com'
 // 请求拦截器
 axios.interceptors.request.use(function (config) {
-
   // console.log(config);
   // 请求本地文件
-  if(config.params && config.params.location){
+  if (config.params && config.params.location) {
     // console.log(config.params);
-    config.baseURL = "";
+    config.baseURL = ''
   }
   // 在发送请求之前做些什么
   config.params = {

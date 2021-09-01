@@ -59,6 +59,22 @@ export default {
       })
     })
   },
+   mounted (){
+    // const html = document.getElementsByTagName("html")[0];
+    // const that = this;
+    // html.addEventListener("click", function (e){
+    //   // console.log(e);
+    //   e.stopPropagation();
+    //   // console.log("click");
+    //   if(that.showCity == true){
+    //     that.showCity = false;
+    //   }
+    //   if(that.showProvince == true){
+    //     that.showProvince = false;
+    //   }
+    // });
+    // console.log(html);
+  },
   methods: {
     querySearchAsync(queryString) {
       // 输入时执行的函数
